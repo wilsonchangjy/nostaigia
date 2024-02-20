@@ -1,0 +1,64 @@
+/* CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Helvetica", sans-serif;
+    color: #fff;
+    background-color: #121212;
+
+    -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+/* Canvas */
+.canvas-div {  
+    position: relative;
+    background-color: #111;
+
+    align-items: center;
+}
+
+canvas {
+    --width: 0px;
+    --height: 0px;
+    position: absolute;
+    padding: 0;
+    left: calc((100vw - var(--width)) / 2);
+    right: auto;
+    top: calc((100vh - var(--height)) / 2);
+    bottom: auto;
+    display: block;
+}
+
+#image-canvas {
+    z-index: 1;
+}
+
+#interaction-canvas {
+    z-index: 2;
+}
+
+.hover-cursor {
+    cursor: crosshair;
+}
+
+.hide-cursor {
+    cursor: none;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    padding: 16px 32px;
+    top: calc(100vh);
+    background-color: #fff;
+    color: #111;
+    width: 100vw;
+}

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <title>nostAIgia</title>
+        <!-- <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml"> -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="yaml.min.js"></script>
+    </head>
+    <body>
+        <section>
+            <div class="canvas-div">
+                <canvas id="image-canvas"></canvas>
+                <canvas id="interaction-canvas"></canvas>
+            </div>
+            <div class="footer">
+                <input type="checkbox" id="mode-toggle">
+                <p>Version 0.1 Beta</p>
+            </div>
+        </section>
+
+        <script src="yolo.js"></script>
+        <script src="canvas.js"></script>
+        <script src="data.js"></script>
+        <script src="autocomplete.js"></script>
+        <script src="instructions.js"></script>
+        <script src="animate.js"></script>
+        <!-- <script src="google.js"></script> -->
+    </body>
+</html>
